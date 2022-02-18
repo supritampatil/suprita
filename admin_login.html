@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+             background-image: url('img.png'); 
+            /* background-position:center; */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .loginbox {
+            width: 600px;
+            height: 400px;
+            box-sizing: border-box;
+            position: absolute;
+            background-color: rgb(161, 156, 151);
+            color: rgb(34, 15, 4);
+            top: 50%;
+            left: 52%;
+            transform: translate(-56%, -18%);
+            padding: 20px 60px;
+            border-radius: 20px;
+        }
+        
+        .user {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            position: absolute;
+            top: -46px;
+            left: 125px;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        .loginbox p {
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+            color: rgb(8, 7, 15);
+        }
+        
+        .loginbox input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid rgb(245, 14, 122);
+            background: transparent;
+            outline: none;
+            height: 35px;
+            font-size: 16.5px;
+        }
+        
+        .loginbox input[type="submit"] {
+            height: 38px;
+            border-radius: 12px;
+            color: rgb(11, 1, 17);
+        }
+        
+        .loginbox input[type="submit"]:hover {
+            background-color: rgb(34, 140, 238);
+        }
+        
+        .loginbox a {
+            text-decoration: none;
+            color: rgb(16, 12, 22);
+            font-size: 13px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <center><h2>WELCOME TO FLIGHT BOOKING</h2></center>
+    <div class="loginbox">
+        <h3>Admin Login Form</h3>
+        <form action="auth" method="POST">
+            <div>
+                <p>Username</p>
+                <input type="text" id="log" placeholder="Enter Your Username" name="username" maxlength="8" required>
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" id="pass" placeholder="Enter Your Password" name="password" required>
+
+                <input type="submit" value="Login" id="val">
+
+            </div>
+
+            <a href="#">Forgot your password?</a> <br>
+            <a href="#">Dont have an account?</a>
+        </form>
+    </div>
+</body>
+
+</html>
